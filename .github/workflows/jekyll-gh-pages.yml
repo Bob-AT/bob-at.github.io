@@ -31,11 +31,11 @@ jobs:
         with:
           repository: gbgmc/ground-branch-game-modes
           ref: import-web
-          path: repo
+          path: working-copy
       - name: Move
         run: |
-           mv repo/docs/* .
-           rm -rf repo
+           mv working-copy/docs/* .
+           rm -rf working-copy
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
