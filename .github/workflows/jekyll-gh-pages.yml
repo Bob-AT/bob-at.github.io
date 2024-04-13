@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: gbgmc/ground-branch-game-modes
-          ref: web-import
+          ref: import-web
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
