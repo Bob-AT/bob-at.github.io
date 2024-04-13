@@ -31,12 +31,14 @@ jobs:
       - name: Checkout Docs
         uses: actions/checkout@v4
         with:
-          repository: gbgmc/ground-branch-game-modes
-          ref: import-web
+          #repository: gbgmc/ground-branch-game-modes
+          #ref: import-web
+          repository: gbgmc/gbgmc.github.io
+          ref: main
           path: working-copy
       - name: Move
         run: |
-           mv -v working-copy/docs/* .
+           mv -v working-copy/* .
            rm -rf working-copy
       #- name: Setup Pages
       #  uses: actions/configure-pages@v5
