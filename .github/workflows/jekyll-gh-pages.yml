@@ -29,14 +29,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: gbgmc/gbgmc.github.io
-          ref: main
+          repository: gbgmc/ground-branch-game-modes
+          ref: web-import
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./docs
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
